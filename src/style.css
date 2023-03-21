@@ -14,6 +14,12 @@ body {
   background-color: var(--main-color);
 }
 
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
     url("../images/pexels-oleksandr-pidvalnyi-341372.jpg");
@@ -79,4 +85,12 @@ header a {
 
 .grid-3-columns {
   grid-template-columns: repeat(3, 3fr);
+}
+
+.img-responsive {
+  border-radius: 200px;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
