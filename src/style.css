@@ -1,0 +1,82 @@
+:root {
+  --main-color: #272343;
+  --second-color: #bae8e8;
+  --third-color: #e3f6f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--main-color);
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+    url("../images/pexels-oleksandr-pidvalnyi-341372.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 200px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1;
+  margin: 30px 0;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+header a {
+  background: white;
+  color: var(--main-color);
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5px;
+  letter-spacing: 3px;
+  margin-top: 32px;
+  padding: 20px 32px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-columns {
+  grid-template-columns: repeat(3, 3fr);
+}
