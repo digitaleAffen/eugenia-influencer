@@ -11,7 +11,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: var(--main-color);
+  background-color: white;
 }
 
 section {
@@ -87,10 +87,54 @@ header a {
   grid-template-columns: repeat(3, 3fr);
 }
 
-.img-responsive {
+.img-responsive-round {
   border-radius: 200px;
   max-width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.img-responsive {
+  border-radius: 8px;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.secondary {
+  background: var(--third-color);
+}
+
+.card {
+  background: white;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 20px;
+}
+
+.button {
+  background: var(--main-color);
+  color: white;
+  display: block;
+  max-width: 100%;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21xp;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
 }
