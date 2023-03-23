@@ -177,7 +177,7 @@ ul {
 
 .button {
   background: var(--main-color);
-  color: white;
+  color: white !important;
   display: block;
   max-width: 100%;
   text-decoration: none;
