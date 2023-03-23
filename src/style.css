@@ -108,6 +108,11 @@ main h5 {
   margin: 0;
 }
 
+p,
+strong {
+  color: var(--main-color);
+}
+
 a {
   color: var(--main-color);
   text-decoration: none;
