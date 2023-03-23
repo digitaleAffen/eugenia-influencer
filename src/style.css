@@ -1,6 +1,6 @@
 :root {
   --main-color: #272343;
-  --second-color: #bae8e8;
+  --second-color: #87c8c8;
   --third-color: #e3f6f5;
 }
 
@@ -108,6 +108,23 @@ main h5 {
   margin: 0;
 }
 
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--second-color);
+}
+
+a:visited {
+  color: var(--main-color);
+}
+
+ul {
+  list-style: none;
+}
+
 .grid {
   display: grid;
   grid-gap: 64px;
@@ -176,4 +193,15 @@ main h5 {
 
 .tip {
   font-size: 14px;
+}
+
+.icon {
+  color: var(--second-color);
+  font-size: 26px;
+  padding: 12px;
+}
+
+.contact-text {
+  margin-top: 30px;
+  text-align: right;
 }
