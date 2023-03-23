@@ -234,3 +234,13 @@ strong:hover {
   margin-top: 30px;
   text-align: right;
 }
+
+.social-media {
+  color: var(--second-color);
+  font-size: 56px;
+  padding: 12px;
+}
+
+.social-media:hover {
+  color: var(--main-color);
+}
