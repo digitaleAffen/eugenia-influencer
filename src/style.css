@@ -173,3 +173,7 @@ main h5 {
   text-transform: uppercase;
   padding: 16px;
 }
+
+.tip {
+  font-size: 14px;
+}
