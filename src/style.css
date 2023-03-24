@@ -1,8 +1,10 @@
 :root {
   --main-color: #5c8d89;
   --first-color: #f4f9f4;
-  --second-color: #a7d7c5;
+  --second-color: #ecf3f1;
   --third-color: #74b49b;
+  --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --element-transition: all 150ms ease-;
 }
 
 * {
@@ -13,6 +15,15 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: white;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+main {
+  background: var(--first-color);
 }
 
 section {
@@ -30,11 +41,6 @@ header {
   padding: 200px 0;
   text-align: center;
   width: 100%;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1400px;
 }
 
 header h1 {
@@ -61,6 +67,7 @@ header h3 {
 
 header a {
   background: white;
+  border-radius: 4px;
   color: var(--main-color);
   display: inline-block;
   font-weight: 700;
@@ -69,14 +76,14 @@ header a {
   letter-spacing: 3px;
   margin-top: 32px;
   padding: 20px 32px;
-  border-radius: 4px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-main {
+header a:hover {
   background: var(--first-color);
+  transition: var(--element-transition);
 }
 
 main h2 {
@@ -118,17 +125,14 @@ strong {
   color: var(--main-color);
 }
 
-a {
+a,
+a:visited {
   color: var(--main-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--second-color);
-}
-
-a:visited {
-  color: var(--main-color);
+  color: var(--third-color);
 }
 
 ul {
@@ -148,11 +152,6 @@ footer {
 
 footer h4 {
   color: var(--main-color);
-}
-
-footer a,
-strong:hover {
-  color: var(--second-color);
 }
 
 .grid {
@@ -211,18 +210,23 @@ strong:hover {
 
 .button {
   background: var(--main-color);
+  border-radius: 4px;
   color: white !important;
   display: block;
   max-width: 100%;
-  text-decoration: none;
-  border-radius: 4px;
   font-weight: 700;
   font-size: 14px;
   line-height: 21xp;
-  text-align: center;
   letter-spacing: 3px;
-  text-transform: uppercase;
   padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: var(--element-transition);
+}
+
+.button:hover {
+  background: var(--third-color);
 }
 
 .tip {
@@ -230,13 +234,9 @@ strong:hover {
 }
 
 .icon {
-  color: var(--second-color);
+  color: var(--main-color);
   font-size: 26px;
   padding: 12px;
-}
-
-.icon:hover {
-  color: var(--main-color);
 }
 
 .contact-text {
@@ -245,19 +245,18 @@ strong:hover {
 }
 
 .social-media {
-  color: var(--second-color);
   font-size: 56px;
   padding: 12px;
-}
-
-.social-media:hover {
-  color: var(--main-color);
 }
 
 .footer-text {
   max-width: 100%;
   margin: 0 auto;
   padding: 80px 240px 80px 240px;
+}
+
+.giovanna {
+  font-weight: 800;
 }
 
 @media (max-width: 998px) {
