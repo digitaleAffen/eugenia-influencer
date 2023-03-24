@@ -244,3 +244,9 @@ strong:hover {
 .social-media:hover {
   color: var(--main-color);
 }
+
+.footer-text {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 80px 240px 80px 240px;
+}
