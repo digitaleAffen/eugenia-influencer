@@ -159,6 +159,10 @@ strong:hover {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid-2-columns-contact {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .grid-3-columns {
   grid-template-columns: repeat(3, 3fr);
 }
@@ -249,4 +253,16 @@ strong:hover {
   max-width: 100%;
   margin: 0 auto;
   padding: 80px 240px 80px 240px;
+}
+
+@media (max-width: 998px) {
+  .grid-2-columns {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  .grid-3-columns {
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
 }
