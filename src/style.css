@@ -290,21 +290,24 @@ footer h4 {
   }
 
   header h2 {
-    font-size: 20px;
+    font-size: 28px;
+    line-height: 0.9;
   }
 
   header h3 {
     font-size: 16px;
   }
 
-  header a {
-    font-size: 24px !important;
-  }
   section {
-    padding: 10px;
+    padding: 20px;
+  }
+
+  main h2 {
+    font-size: 24px;
   }
 
   .grid-2-columns-contact {
+    grid-gap: 0px;
     grid-template-columns: 1fr;
   }
 
@@ -312,7 +315,14 @@ footer h4 {
     align-items: center;
   }
 
-  footer .grid {
-    grid-template-columns: 1fr;
+  .contact-text {
+    text-align: center;
+  }
+
+  .card {
+  }
+
+  .footer-text {
+    padding: 40px;
   }
 }
