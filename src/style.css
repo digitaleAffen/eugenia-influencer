@@ -1,7 +1,8 @@
 :root {
-  --main-color: #272343;
-  --second-color: #87c8c8;
-  --third-color: #e3f6f5;
+  --main-color: #5c8d89;
+  --first-color: #f4f9f4;
+  --second-color: #a7d7c5;
+  --third-color: #74b49b;
 }
 
 * {
@@ -74,6 +75,10 @@ header a {
   text-transform: uppercase;
 }
 
+main {
+  background: var(--first-color);
+}
+
 main h2 {
   color: var(--main-color);
   font-weight: 700;
@@ -96,7 +101,7 @@ main h4 {
   font-weight: 700;
   font-size: 24px;
   line-height: 1;
-  color: #272044;
+  color: var(--main-color);
   margin: 0;
 }
 
@@ -104,7 +109,7 @@ main h5 {
   font-weight: 700;
   font-size: 13px;
   line-height: 1;
-  color: #272044;
+  color: var(--main-color);
   margin: 0;
 }
 
@@ -188,7 +193,7 @@ strong:hover {
 }
 
 .secondary {
-  background: var(--third-color);
+  background: var(--second-color);
 }
 
 .card {
@@ -263,6 +268,43 @@ strong:hover {
 
   .grid-3-columns {
     align-items: center;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 58px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 16px;
+  }
+
+  header a {
+    font-size: 24px !important;
+  }
+  section {
+    padding: 10px;
+  }
+
+  .grid-2-columns-contact {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3-columns {
+    align-items: center;
+  }
+
+  footer .grid {
     grid-template-columns: 1fr;
   }
 }
